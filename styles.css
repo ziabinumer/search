@@ -1,0 +1,134 @@
+html, body {
+    height: 100%;
+}
+
+nav {
+    display: flex;
+    padding: 8px 8px 0px 0px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav #navmenu {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+}
+nav ul li {
+    padding: 10px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-family: arial, sans-serif;
+}
+
+/* */
+.btn-secondary {
+    background-color: white !important;
+    color: black !important;
+}
+.btn-adv {
+    color: blue !important;
+}
+
+/* */
+.content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.formt1 {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.formt1 input[type=submit] {
+    width: 150px;
+}
+
+.search-bar {
+    background-image: url('sicon.png');
+    background-position: 10px center;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    width: 550px;
+    margin: 15px;
+    font-size: 16px;
+    padding: 8px 20px 8px 40px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    margin-bottom: 12px;
+}
+
+
+/* */
+.adv {
+    padding: 15px 10px 10px 40px;
+}
+.adv-content {
+    padding-left: 40px;
+}
+.table {
+    border-collapse: separate;
+    border-spacing:0 0;
+}
+.table tr {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+}
+.table td {
+    width: 250px;
+}
+.table input {
+    border: 1px solid #ddd;
+    border-radius: 0;
+}
+
+
+@media screen and (max-width: 580px) {
+    #navlogo {
+        padding-left:5px;
+    }
+    .search-bar {
+        width: 350px;
+    }
+    img {
+        width: 225px;
+        height: 75px;
+        max-width: 300px;
+    }
+    .adv {
+        padding: 10px;
+    }
+    .adv-content {
+        padding-left: 15px;
+    }
+    table tr {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .search-bar {
+        width: 250px;
+    }
+    img {
+        width: 150px;
+        height: 50px;
+    }
+    .hhig {
+        margin-top: -5px !important;
+    }
+}
